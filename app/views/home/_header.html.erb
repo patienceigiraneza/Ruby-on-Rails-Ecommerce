@@ -15,24 +15,19 @@
         <li class="nav-item">
           <%= link_to 'About us', home_about_path, class:"nav-link"  %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Pricing">Pricing</a>
-        </li>
 
+        
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <a class="nav-link dropdown-toggle" href="products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about">About</a></li>
-            <li><a class="dropdown-item" href="pricing">pricing</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><%= link_to 'Products List', products_path, class:"dropdown-item"  %></li>
+            <li><%= link_to 'Add Product', new_product_path, class:"dropdown-item"  %></li>
+          
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+        
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
